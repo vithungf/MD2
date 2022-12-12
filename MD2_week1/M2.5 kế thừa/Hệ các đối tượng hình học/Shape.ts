@@ -11,7 +11,7 @@ export class Shape {
         return this.color;
     }
 
-    public setColor(color: string) {
+    public setColor(color: string): void {
         this.color = color;
     }
 
@@ -19,15 +19,14 @@ export class Shape {
         return this.filled;
     }
 
-    public setFilled(filled: boolean) {
+    public setFilled(filled: boolean): void {
         this.filled = filled;
-
     }
+
     public toString(): string {
-        return "a shape with color"
-       + this.getColor()
-        +  ' and'
-        +(this.filled ? "filled" :'not filled');
+        return "A Shape with color of "
+            + this.getColor()
+            + " and "
+            + (this.isFilled() ? "filled" : "not filled");
     }
-
 }
