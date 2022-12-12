@@ -15,5 +15,5 @@ manager.add(employee4)
 console.table(manager.display())
 
 
-// manager.Delete("tran","hung","26/1")
+manager.Delete("tran","hung","26/1")
 console.table(manager.display())
